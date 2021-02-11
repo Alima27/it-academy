@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Изучаем корейский язык!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/image/han.png" type="image/png">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header_menu">
+            <ul class="header_menu_main">
+                <li> <a href="index.html">Главная</a> </li>
+                <li> <a href="#">Алфавит</a> </li>
+                <li> <a href="#">Цифры</a> </li>
+                <li> <a href="#">Грамматика</a> </li>
+                <li> <a href="#">Слова</a> </li>
+                <li> <a href="#">История</a> </li>
+            </ul>
+            <span class="header_menu_img">
+                   <img src="C:/Users/Alima/Desktop/IT-academy/assets/image/han.png" alt="logo">
+            </span>
+        </div>
+    </header>
+
+    <section>
+        <div class="slider">
+            <!--alphabet-->
+            <input type="radio" name="slide_switch" id="slider_alp" checked="checked">
+            <label for="slider_alp">
+               <img src="assets/image/alphabet.jpg" data-url="#">
+            </label>
+            <img src="assets/image/alphabet.jpg" class="main-image" data-url="#">
+            <!--numerical-->
+            <input type="radio" name="slide_switch" id="slider_num">
+            <label for="slider_num">
+               <img src="assets/image/num.jpg">
+            </label>
+            <img src="assets/image/num.jpg" class="main-image" data-url="#">
+            <!--gramma-->
+            <input type="radio" name="slide_switch" id="slider_gramm">
+            <label for="slider_gramm">
+               <img src="assets/image/gramm.jpg" data-url="#">
+            </label>
+            <img src="assets/image/gramm.jpg" class="main-image" data-url="#">
+            <!--words-->
+            <input type="radio" name="slide_switch" id="slider_words">
+            <label for="slider_words">
+               <img src="assets/image/words.jpg" data-url="#">
+            </label>
+            <img src="assets/image/words.jpg" class="main-image" data-url="#">
+        </div>
+    </section>
+
+    <hr class="hr_style">
+
+    <section>
+        <div class="section_history">
+            <div class="section_history_img">
+                <img src="assets/image/history.jpg" alt="history">
+            </div>
+            <div class="section_history_divp">
+                <p class="section_history_p">
+                    Корейский язык — один из древнейших языков мира, который, несмотря на многовековое китайское культурное влияние, японскую военную оккупацию и американское присутствие после окончания второй мировой войны, сумел сохранить свою самобытность и оригинальность,
+                    отражающие национальные характер, многовековые традиции и внутренний мир каждого корейца и корейского народа в целом.
+                </p>
+            </div>
+            <div class="section_history_button">
+                <a href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8_%D0%9A%D0%BE%D1%80%D0%B5%D1%8F">читать</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="info">
+            <div class="info_aboutus">
+                <h1> О нас</h1>
+                <p> Говорим о корейской культуре и учим корейский язык. У нас Вы можете поучаствовать в мастер-классах, заниматься k-pop, найти единомышленников. </p>
+            </div>
+
+            <div class="info_contacts">
+                <h1>Контакты</h1>
+                <ul>
+                    <li> <i class="fas fa-mobile-alt"></i> <span>+996 702-535-101</span> </li>
+                    <li> <i class="fas fa-map-marker-alt"></i> <span>205, Gangdong-daero, Gangdong-gu, Seoul   </span> </li>
+                    <li>
+                        <a href="mailto:@alima.karimova27@gmail.com"> <i class="fas fa-envelope"></i> </a><span>@hankook.gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info_menu">
+                <h1>Меню</h1>
+                <ul>
+                    <li> <a href="#">Алфавит</a> </li>
+                    <li> <a href="#">Цифры</a> </li>
+                    <li> <a href="#">Грамматика</a> </li>
+                    <li> <a href="#">Слова</a> </li>
+                    <li> <a href="#">История</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="map">
+            <div id="map_wrapper_b">
+                <div id="map_b"> </div>
+                <a href="https://1map.com/map-embed"> map</a>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://www.pinterest.com/" title="pinterest" target="_blank"> <i class="fab fa-pinterest-p"> </i></a>
+            <a href="https://www.instagram.com/" title="instagram" target="_blank"> <i class="fab fa-instagram"> </i></a>
+            <a href="https://www.twitter.com/" title="twitter" target="_blank"> <i class="fab fa-twitter"></i> </a>
+            <a href="https://www.facebook.com/" title="facebook" target="_blank"> <i class="fab fa-facebook"></i> </a>
+            <a href="https://www.youtube.com/" title="youtube" target="_blank"> <i class="fab fa-youtube"></i> </a>
+        </div>
+    </footer>
+
+    <!--slider-->
+    <script>
+        const images = document.querySelectorAll('.main-image');
+        for (let image of images) {
+            image.addEventListener('click', e => {
+                document.location = e.target.dataset.url;
+            })
+        }
+    </script>
+
+    <!--map-->
+    <script>
+        (function() {
+            var setting = {
+                "height": 200,
+                "width": 1350,
+                "zoom": 17,
+                "queryString": "JYP ENTERTAINMENT, JYP Center Gangdong-daero, Seongnae-dong, Gangdong-gu, Seoul, South Korea",
+                "place_id": "ChIJORs3cdyjfDURYO1Gpjj0Ll4",
+                "satellite": true,
+                "centerCoord": [37.52408371219603, 127.12910740000001],
+                "cid": "0x5e2ef438a646ed60",
+                "lang": "en",
+                "cityUrl": "/korea/seoul",
+                "cityAnchorText": "Map of Seoul, Han River, South Korea",
+                "id": "map_b",
+                "embed_id": "374465"
+            };
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=374465';
+            s.async = true;
+            s.onload = function(e) {
+                window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+        })();
+    </script>
+</body>
+
+</html>
