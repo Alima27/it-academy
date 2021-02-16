@@ -410,7 +410,8 @@ footer {
     margin-bottom: 10px;
 }
 
-.info h1 {
+
+span {
     font-size: 25px;
     font-weight: bold;
 }
@@ -424,7 +425,7 @@ footer {
     border-right: solid;
 }
 
-.info_contacts {
+.info_contacts{
     width: 30%;
     line-height: 25px;
     text-align: center;
@@ -432,14 +433,16 @@ footer {
     border-right: solid;
     line-height: 30px;
 }
-
+.num{
+    font-weight:normal;
+    font-size:18px;
+}
 .info_menu {
     width: 30%;
     color: #ededed;
     line-height: 25px;
 }
-
-.infop,
+.info p,
 a {
     text-decoration: none;
     color: #ededed;
